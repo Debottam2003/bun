@@ -40,7 +40,7 @@ try {
           // let { rows } = await pg_obj.query("select * from users");
           // return Response.json(rows);
           // return Response.json({ username: "debottam", age: 22 });
-          return new Response("Hello wolrd");
+          return new Response("Hello world");
         },
         POST: async (req) => {
           let body = await req.json(); // <-- equivalent of express.json()
