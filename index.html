@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Hi i am building a chat app</h1>
+<script>
+  async function call() {
+    let response = await fetch("http://localhost:4000/", {
+      method: "GET",
+      credentials: "include", // 👈 this is key to send/receive cookies
+    });
+    let data = await response.text();
+    console.log(data);
+  }
+  call();
+</script>
+</body>
+</html>
