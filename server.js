@@ -89,11 +89,11 @@ import pkg from 'pg';
 const { Pool } = pkg;
 
 let pool = new Pool({
-    connectionString: process.env.postgres_URL || 'postgres://postgres:password@localhost:5432/postgres',
+    connectionString: process.env.postgres_URL || 'postgres://postgres:okudera2003@localhost:3000/Search',
     max: 100
 });
 
-console.log(await pool.query('SELECT * FROM users'));
+console.log(await pool.query('SELECT * FROM authors'));
 
 const app = express();
 const PORT = 3333;
@@ -102,6 +102,10 @@ const PORT = 3333;
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
+app.get("/", async (req, res) => {
+    res.send("hello world");
+});
+
 app.get('/home', async (req, res) => {
     try {
         const result = await pool.query('SELECT * FROM users'); // Query the database
@@ -109,7 +113,7 @@ app.get('/home', async (req, res) => {
         res.send(result.rows); // Send the result as a response
         // res.send("hello world");
     } catch (error) {
-        res.status(500).send({ error: 'Internal Server Error' });   
+        res.status(500).send({ error: 'Internal Server Error' });
     }
 });
 
