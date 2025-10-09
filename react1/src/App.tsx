@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-function App() {
-  return <div className="app">Hello</div>;
-=======
 import CompA from "./CompA";
 import CompB from "./CompB";
 import CompC from "./CompC";
@@ -29,7 +25,6 @@ function App() {
       <CompD></CompD>
     </Context>
   );
->>>>>>> 839e3aa9c9c4d6d138a6208248459078e0c3b2a2
 }
 
 export default App;
