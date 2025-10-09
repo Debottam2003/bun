@@ -2,11 +2,7 @@ import { serve } from "bun";
 import index from "./index.html";
 
 const server = serve({
-<<<<<<< HEAD
-  port: 3333,
-=======
   port: 5173,
->>>>>>> 839e3aa9c9c4d6d138a6208248459078e0c3b2a2
   routes: {
     // Serve index.html for all unmatched routes.
     "/*": index,
@@ -26,11 +22,7 @@ const server = serve({
       },
     },
 
-<<<<<<< HEAD
-    "/api/hello/:name": async (req) => {
-=======
     "/api/hello/:name": async req => {
->>>>>>> 839e3aa9c9c4d6d138a6208248459078e0c3b2a2
       const name = req.params.name;
       return Response.json({
         message: `Hello, ${name}!`,

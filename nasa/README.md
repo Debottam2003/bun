@@ -18,8 +18,4 @@ To run for production:
 bun start
 ```
 
-<<<<<<< HEAD
-This project was created using `bun init` in bun v1.2.23. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
-=======
 This project was created using `bun init` in bun v1.2.22. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
->>>>>>> 839e3aa9c9c4d6d138a6208248459078e0c3b2a2

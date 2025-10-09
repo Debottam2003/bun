@@ -5,25 +5,12 @@
  * It is included in `src/index.html`.
  */
 
-<<<<<<< HEAD
-import { StrictMode } from "react";
 import { createRoot } from "react-dom/client";
 import App from "./App";
 import "./index.css";
 
 const elem = document.getElementById("root")!;
-const app = (
-  <StrictMode>
-    <App />
-  </StrictMode>
-);
-=======
-import { createRoot } from "react-dom/client";
-import App from "./App";
-
-const elem = document.getElementById("root")!;
 const app = <App />;
->>>>>>> 839e3aa9c9c4d6d138a6208248459078e0c3b2a2
 
 if (import.meta.hot) {
   // With hot module reloading, `import.meta.hot.data` is persisted.
