@@ -1,0 +1,1 @@
+console.log("hello from inbuilt ts in nodejs");
