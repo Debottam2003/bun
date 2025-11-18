@@ -4,7 +4,7 @@ function add(a, b) {
     return a + b;
 }
 
-function test(condition, message) {
+function Tester(condition, message) {
     if (!condition) {
         throw new Error(message)
     }
@@ -16,7 +16,7 @@ for (let i = 0; i < testCases.length; i++) {
     let testCase = testCases[i];
     let [a, b, result] = testCase;
     try {
-        test(add(a, b) === result, `${a} + ${b} should be ${result}`);
+        Tester(add(a, b) === result, `${a} + ${b} should be ${result}`);
         console.log(`Test case ${i + 1} is passed`);
     }
     catch (e) {
@@ -27,3 +27,8 @@ for (let i = 0; i < testCases.length; i++) {
 // let arr = ["a", "b", "c"];
 // console.log(arr["0"]); // "a"
 // console.log(arr[0]);   // "a"
+
+// console.log({ name: "debottam" } == { name: "debottam" });
+// console.log("debottam" === "debottam");
+// console.log(new String("debottam") == new String("debottam"));
+// console.log(new String("debotam"));
