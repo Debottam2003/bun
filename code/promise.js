@@ -13,6 +13,6 @@ async function asyncFunction() {
     });
 }
 
-let res = await asyncFunction();// res is a Promise object of pending state
+let res = asyncFunction();// res is a Promise object of pending state
 // let res = await asyncFunction();// res is the message that passed in the resolve 
 console.log(res);
