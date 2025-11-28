@@ -24,20 +24,22 @@ console.log(5);
 //OutPut: 1 5 3 4 2
 
 const obj = {
-    "/": () => {
+    handlers: {
+        "/": () => {
 
-    },
-    get() {
+        },
+        get() {
 
-    },
-    put: () => {
+        },
+        put: () => {
 
-    },
-    delete: function () {
+        },
+        delete: function () {
 
+        }
     }
 }
+obj.handlers["/home"] = () => {
+
+}
 console.log(obj);
-console.log(obj.get);
-console.log(obj.put);
-console.log(obj.delete);
