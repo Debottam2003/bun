@@ -1,6 +1,9 @@
 {
   "lockfileVersion": 1,
+<<<<<<< HEAD
   "configVersion": 0,
+=======
+>>>>>>> 05280f9 (fixes after migration)
   "workspaces": {
     "": {
       "name": "bun",
